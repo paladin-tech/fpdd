@@ -14,7 +14,7 @@ list($title, $content) = $infosystem->Execute("SELECT `title_{$lg}` title, `cont
 					<?
 					if($loggedAsAdmin && isset($_GET['admin'])) {
 					?>
-						<form name="frmUpdate" method="post" action="index.php?pg=links&admin">
+						<form name="frmUpdate" method="post" action="index.php?pg=<?= $pg ?>&lg=<?= $lg ?>&admin">
 							<input type="hidden" name="lg" value="<?= $lg ?>">
 							<div style="float: left">
 								Page Title:<br>
@@ -43,7 +43,7 @@ list($title, $content) = $infosystem->Execute("SELECT `title_{$lg}` title, `cont
 						<?
 						if($loggedAsAdmin) {
 						?>
-							<div style="float: right"><a href="index.php?pg=links&admin"><img src="images/pisaljka012.png" title="EDIT" border="0" /></a></div>
+							<div style="float: right"><a href="index.php?pg=<?= $pg ?>&lg=<?= $lg ?>&admin"><img src="images/pisaljka012.png" title="EDIT" border="0" /></a></div>
 							<?
 						}
 						?>

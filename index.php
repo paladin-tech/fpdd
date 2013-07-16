@@ -144,7 +144,7 @@ $loggedAsAdmin = true;
 <!--								<div class="box-button">-->
 <!--									<a href="dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-2/" class="box-button-link"><span class="middle"><span class="left"><span class="right">Tell Friends</span></span></span></a>-->
 <!--								</div>-->
-								<div><a href="index.php?pg=<?= $pg ?>&lg=en<?= (isset($_GET['admin']))?"&admin":"" ?>">en</a>&nbsp;<a href="index.php?pg=<?= $pg ?>&lg=bg<?= (isset($_GET['admin']))?"&admin":"" ?>">bg</a></div>
+								<div><a href="index.php?pg=<?= $pg ?>&lg=en<?= (isset($_GET['admin']))?"&admin":"" ?>"><img src="images/gb.png"></a>&nbsp;<a href="index.php?pg=<?= $pg ?>&lg=bg<?= (isset($_GET['admin']))?"&admin":"" ?>"><img src="images/bg.png"></a></div>
 							</div>
 						</div> </div>
 				</div>
