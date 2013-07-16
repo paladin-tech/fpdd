@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+.Image_Left {
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+.Image_Right {
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.Table_Left {
+	align: left;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+.Table_Right {
+	align: right;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.Div_Left {
+	float: left;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+.Div_Right {
+	float: right;
+	background: #F5F5F5;
+	border: solid 1px #CCCCCC;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+body, td, th {
+	color: #424738;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	color: #666666;
+	font-size: 2em;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+h2 {
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	color: #B8B88D;
+	font-size: 1.6em;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+h3 {
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	color: #B8B89D;
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+.Text {
+	color: #424738;
+	line-height: 150%;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+A {
+	color: #666666;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+A:Visited {
+	color: #666666;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+A:ACTIVE {
+	color: #666666;
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+A:HOVER {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+p {
+	color: rgb(125, 125, 125);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
