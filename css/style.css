@@ -1,11 +1,13 @@
-@charset utf-8;
+@charset
+utf-8
 
+;
 html, body {
 	min-width: 960px;
 }
 
 body {
-	background: url(images/body-tail.jpg) repeat center top fixed #fff;
+	background: url(../images/body-tail.jpg) repeat center top fixed #fff;
 	color: #7d7d7d;
 	font: 100%/1.125em Arial, Helvetica, sans-serif;
 	position: relative;
@@ -16,7 +18,7 @@ body {
 }
 
 #main-tail {
-	background: url(images/main-tail.jpg) repeat center top;
+	background: url(../images/main-tail.jpg) repeat center top;
 }
 
 .container {
@@ -26,7 +28,7 @@ body {
 }
 
 dl dt {
-	background: url(images/list-arrow.gif) no-repeat 0 3px;
+	background: url(../images/list-arrow.gif) no-repeat 0 3px;
 	padding: 0 0 3px 32px;
 	margin-bottom: .2em;
 	font-size: 18px;
@@ -44,7 +46,7 @@ dl dd {
 	position: relative;
 	z-index: 999;
 	margin-bottom: 29px;
-	background: url(images/header-tail.gif) repeat-x center top;
+	background: url(../images/header-tail.gif) repeat-x center top;
 }
 
 .logo {
@@ -130,7 +132,7 @@ dl dd {
 }
 
 .top-box {
-	background: url(images/request-tail.gif) repeat-x left top #f6f0ea;
+	background: url(../images/request-tail.gif) repeat-x left top #f6f0ea;
 	box-shadow: 0 0 3px rgba(209, 209, 209, .5);
 	border: 1px solid #e1dfdb;
 	padding: 24px 0 0 45px;
@@ -169,19 +171,19 @@ dl dd {
 .box-button-link .middle {
 	background-repeat: repeat-x;
 	background-position: left top;
-	background-image: url(images/link-middle.gif);
+	background-image: url(../images/link-middle.gif);
 }
 
 .box-button-link .left {
 	background-repeat: no-repeat;
 	background-position: left top;
-	background-image: url(images/link-left.gif);
+	background-image: url(../images/link-left.gif);
 }
 
 .box-button-link .right {
 	background-repeat: no-repeat;
 	background-position: right top;
-	background-image: url(images/link-right.gif);
+	background-image: url(../images/link-right.gif);
 	line-height: 44px;
 	height: 47px;
 	padding: 0 28px 0 31px;
@@ -219,7 +221,7 @@ dl dd {
 	width: 460px;
 	height: 341px;
 	overflow: hidden;
-	background: url(images/loading.gif) no-repeat 50% 50% #d3d3d3;
+	background: url(../images/loading.gif) no-repeat 50% 50% #d3d3d3;
 	position: relative;
 	left: 250px;
 }
@@ -240,7 +242,7 @@ dl dd {
 	left: 0;
 	bottom: 0;
 	width: 599px;
-	background: url(images/slider-caption.png);
+	background: url(../images/slider-caption.png);
 	z-index: 999;
 	color: #f1e7e7;
 	text-decoration: none;
@@ -288,16 +290,16 @@ dl dd {
 }
 
 #faded .pagination li.item-1 {
-	background-image: url(images/pagi-bg1.gif);
+	background-image: url(../images/pagi-bg1.gif);
 	height: 83px;
 }
 
 #faded .pagination li.item-2 {
-	background-image: url(images/pagi-bg2.gif);
+	background-image: url(../images/pagi-bg2.gif);
 }
 
 #faded .pagination li.item-3 {
-	background-image: url(images/pagi-bg3.gif);
+	background-image: url(../images/pagi-bg3.gif);
 }
 
 #faded .pagination li a.thumb {
@@ -340,7 +342,7 @@ dl dd {
 	height: 11px;
 	background-repeat: no-repeat;
 	background-position: left top;
-	background-image: url(images/pagi-arrow.gif);
+	background-image: url(../images/pagi-arrow.gif);
 	z-index: 99;
 }
 
@@ -448,14 +450,14 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 
 .sf-menu li ul {
-	background: url(images/sub-menu.gif);
+	background: url(../images/sub-menu.gif);
 	width: 146px;
 	padding: 14px 0 17px 0;
 	box-shadow: 1px 0 0 rgba(0, 0, 0, .3);
 }
 
 .sf-menu li li {
-	background: url(images/sub-menu-divider.gif) repeat-x left top;
+	background: url(../images/sub-menu-divider.gif) repeat-x left top;
 	padding-top: 8px;
 	margin-top: 9px;
 }
@@ -497,7 +499,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 	height: 10px;
 	text-indent: -999em;
 	overflow: hidden;
-	background: url(images/arrows-ffffff.png) no-repeat -10px -100px;
+	background: url(../images/arrows-ffffff.png) no-repeat -10px -100px;
 }
 
 a>.sf-sub-indicator {
@@ -522,7 +524,7 @@ a:focus>.sf-sub-indicator, a:hover>.sf-sub-indicator, a:active>.sf-sub-indicator
 }
 
 .sf-shadow ul {
-	background: url(images/shadow.png) no-repeat bottom right;
+	background: url(../images/shadow.png) no-repeat bottom right;
 	padding: 0 8px 9px 0;
 	-moz-border-radius-bottomleft: 17px;
 	-moz-border-radius-topright: 17px;
@@ -574,7 +576,7 @@ a:focus>.sf-sub-indicator, a:hover>.sf-sub-indicator, a:active>.sf-sub-indicator
 .primary_content_wrap {
 	position: relative;
 	padding-bottom: 50px;
-	background: url(images/tail-bottom.gif) repeat-x center bottom;
+	background: url(../images/tail-bottom.gif) repeat-x center bottom;
 }
 
 body.home .primary_content_wrap {
@@ -763,7 +765,7 @@ a.comments-link:hover {
 .post-holder {
 	margin-top: 15px;
 	padding-top: 15px;
-	background: url(images/hr.gif) repeat-x left top;
+	background: url(../images/hr.gif) repeat-x left top;
 	position: relative;
 	overflow: hidden;
 }
@@ -857,7 +859,7 @@ a.comments-link:hover {
 }
 
 .featured-thumbnail .image-wrap[rel="prettyphoto"] {
-	background: url(images/magnify.png) no-repeat 50% 50%;
+	background: url(../images/magnify.png) no-repeat 50% 50%;
 	display: block;
 	float: left;
 }
@@ -1214,7 +1216,7 @@ a[rel="author"] {
 	height: 241px;
 	width: 269px;
 	position: relative;
-	background: #e7e7e7 url(images/loading-folio.gif) 50% 50% no-repeat;
+	background: #e7e7e7 url(../images/loading-folio.gif) 50% 50% no-repeat;
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
@@ -1257,7 +1259,7 @@ a[rel="author"] {
 	top: -164px;
 	height: 241px;
 	width: 269px;
-	background: url(images/magnify.png) 50% 50% no-repeat;
+	background: url(../images/magnify.png) 50% 50% no-repeat;
 	cursor: pointer;
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
@@ -1370,7 +1372,7 @@ a[rel="author"] {
 .widget_ffb {
 	overflow: hidden;
 	margin-bottom: 29px;
-	background: url(images/fb-loading.gif) no-repeat 50% 50% #94a3c4;
+	background: url(../images/fb-loading.gif) no-repeat 50% 50% #94a3c4;
 }
 
 #facebook-fan-box h1 {
@@ -1463,7 +1465,7 @@ a[rel="author"] {
 	overflow: hidden;
 	padding: 12px 0 0 0;
 	margin: 12px 0 0 0;
-	background: url(images/hr.gif) repeat-x left top;
+	background: url(../images/hr.gif) repeat-x left top;
 }
 
 .post_list li:first-child {
@@ -1567,7 +1569,7 @@ a[rel="author"] {
 	padding: 1.5em;
 	margin-bottom: 2em;
 	margin-right: 5px;
-	background: url(images/quotes.png) no-repeat 10px 10px #f3f3f3;
+	background: url(../images/quotes.png) no-repeat 10px 10px #f3f3f3;
 }
 
 .name-testi {
@@ -1714,7 +1716,7 @@ a[rel="author"] {
 	list-style-type: none;
 	margin: 0 0 15px 0;
 	padding: 0 0 0 37px;
-	background: url(images/twitter-icon.png) no-repeat 0 0;
+	background: url(../images/twitter-icon.png) no-repeat 0 0;
 }
 
 .twitter ul li .twitt-body {
@@ -1797,7 +1799,7 @@ article.testimonial {
 	border: 1px solid #eee;
 	padding: 30px 30px 30px 235px;
 	width: auto;
-	background: url(images/quotes.png) no-repeat 170px 20px;
+	background: url(../images/quotes.png) no-repeat 170px 20px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	font-size: 14px;
@@ -1835,7 +1837,7 @@ blockquote.testi-single {
 	border: 1px solid #eee;
 	padding: 30px 30px 30px 235px;
 	width: auto;
-	background: url(images/quotes.png) no-repeat 170px 20px;
+	background: url(../images/quotes.png) no-repeat 170px 20px;
 	font-size: 14px;
 	line-height: 1.5em;
 	font-style: italic;
@@ -2010,7 +2012,7 @@ blockquote.testi-single p {
 	font-size: 13px;
 	padding: 0 0 0 16px;
 	margin: 6px 0 0 0;
-	background: url(images/list-marker.gif) no-repeat left 7px;
+	background: url(../images/list-marker.gif) no-repeat left 7px;
 	text-shadow: none;
 }
 
@@ -2139,7 +2141,7 @@ nav.footer ul li {
 	height: 80px;
 	display: block;
 	margin-bottom: 7px;
-	background: #6e6e6e url(images/up-arrow.png) no-repeat center center;
+	background: #6e6e6e url(../images/up-arrow.png) no-repeat center center;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -2235,7 +2237,7 @@ nav.footer ul li {
 }
 
 .toggle .trigger span {
-	background: url(includes/images/toggle.png) 0 0 no-repeat;
+	background: url(../images/toggle.png) 0 0 no-repeat;
 	display: block;
 	position: absolute;
 	top: 9px;
@@ -2277,7 +2279,7 @@ nav.footer ul li {
 
 .hr {
 	height: 2px;
-	background: url(images/hr.gif);
+	background: url(../images/hr.gif);
 	overflow: hidden;
 	font-size: 0;
 	line-height: 0;
@@ -2308,7 +2310,7 @@ nav.footer ul li {
 	background: none;
 	font-size: 1em;
 	line-height: 18px;
-	background: url(images/address-icon1.png) no-repeat 0 5px;
+	background: url(../images/address-icon1.png) no-repeat 0 5px;
 	color: #e7e7e7;
 	margin-bottom: 16px;
 }
@@ -2316,7 +2318,7 @@ nav.footer ul li {
 .address dd {
 	padding: 0 0 0 46px;
 	margin: 0;
-	background: url(images/address-icon2.png) no-repeat 0 5px;
+	background: url(../images/address-icon2.png) no-repeat 0 5px;
 }
 
 .address dd ul {
@@ -2344,7 +2346,7 @@ nav.footer ul li {
 }
 
 .address dd.email {
-	background: url(images/address-icon3.png) no-repeat 0 5px;
+	background: url(../images/address-icon3.png) no-repeat 0 5px;
 	min-height: 23px;
 	margin-top: 22px;
 }
@@ -2420,7 +2422,7 @@ ul.video li .play {
 	top: 0;
 	width: 109px;
 	height: 96px;
-	background: url(images/play-button.png) no-repeat center center;
+	background: url(../images/play-button.png) no-repeat center center;
 	opacity: .7;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -2630,25 +2632,25 @@ ul.video li .play:hover {
 .error-box, .wpcf7-mail-sent-ng {
 	border-color: #ff9999;
 	color: #c31b00;
-	background: url(images/icons/alert/icon-error.png) no-repeat 20px 50% #ffcccc;
+	background: url(../images/icon-error.png) no-repeat 20px 50% #ffcccc;
 }
 
 .attention-box, .wpcf7-validation-errors, .wpcf7-spam-blocked {
 	border-color: #e6c555;
 	color: #9e660d;
-	background: url(images/icons/alert/icon-note.png) no-repeat 20px 50% #fdebae;
+	background: url(../images/icon-note.png) no-repeat 20px 50% #fdebae;
 }
 
 .notice-box {
 	border-color: #68a2cf;
 	color: #2e6093;
-	background: url(images/icons/alert/icon-info.png) no-repeat 20px 50% #bfe4f9;
+	background: url(../images/icon-info.png) no-repeat 20px 50% #bfe4f9;
 }
 
 .approved-box, .wpcf7-mail-sent-ok {
 	border-color: #a3c159;
 	color: #5e6f33;
-	background: url(images/icons/alert/icon-download.png) no-repeat 20px 50% #ccff99;
+	background: url(../images/icon-download.png) no-repeat 20px 50% #ccff99;
 }
 
 input, select, textarea {

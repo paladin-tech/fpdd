@@ -23,16 +23,13 @@ $loggedAsAdmin = true;
 		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
 	</div>
 	<![endif]-->
-	<link rel="stylesheet" type="text/css" media="all" href="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/css/normalize.css">
-	<link rel="stylesheet" type="text/css" media="all" href="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/style.css">
-	<link rel="stylesheet" type="text/css" media="all" href="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/css/prettyPhoto.css">
-	<link rel="stylesheet" type="text/css" media="all" href="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/css/grid.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/prettyPhoto.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/grid.css">
 	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-	<link rel="alternate" type="application/rss+xml" title="City Portal » Feed" href="http://livedemo00.template-help.com/wordpress_37712/feed/">
-	<link rel="alternate" type="application/rss+xml" title="City Portal » Comments Feed" href="http://livedemo00.template-help.com/wordpress_37712/comments/feed/">
-	<link rel="alternate" type="application/rss+xml" title="City Portal » Home page Comments Feed" href="http://livedemo00.template-help.com/wordpress_37712/home-page/feed/">
-	<link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
+<!--	<link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">-->
 	<script type="text/javascript" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/js/jquery-1.6.4.min.js?ver=1.6.4"></script>
 	<script type="text/javascript" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/js/modernizr.js?ver=2.0.6"></script>
 	<script type="text/javascript" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/js/superfish.js?ver=1.4.8"></script>
@@ -47,11 +44,6 @@ $loggedAsAdmin = true;
 	<script type="text/javascript" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/js/audiojs/audio.js?ver=1.0"></script>
 	<script type="text/javascript" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/js/custom.js?ver=1.0"></script>
 	<script type="text/javascript" src="http://livedemo00.template-help.com/wordpress_37712/wp-includes/js/comment-reply.js?ver=20090102"></script>
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://livedemo00.template-help.com/wordpress_37712/xmlrpc.php?rsd">
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://livedemo00.template-help.com/wordpress_37712/wp-includes/wlwmanifest.xml">
-	<link rel="prev" title="Privacy policy" href="http://livedemo00.template-help.com/wordpress_37712/privacy-policy/">
-	<meta name="generator" content="WordPress 3.3">
-	<link rel="canonical" href="http://livedemo00.template-help.com/wordpress_37712/">
 	<!--[if lt IE 9]>
 	<style type="text/css">
 		#top-search input, .top-box {
