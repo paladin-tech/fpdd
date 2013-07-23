@@ -119,6 +119,15 @@ $loggedAsAdmin = true;
 									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=archive-common-use&lg=<?= $lg ?>">Archive & Common Use</a></li>
 								</ul>
 							</li>
+							<li id="menu-item-0205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="#" onclick="return false;">Links</a>
+								<ul class="sub-menu" style="display: none; visibility: hidden;">
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=main-partners&lg=<?= $lg ?>">Main Partners</a></li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=danube-municipalities&lg=<?= $lg ?>">Danube Municipalities</a></li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=tourism-organizations&lg=<?= $lg ?>">Tourism Organizations</a></li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=international-partners&lg=<?= $lg ?>">International Partners</a></li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=links-others&lg=<?= $lg ?>">Others</a></li>
+								</ul>
+							</li>
 							<li id="menu-item-019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="index.php?pg=links&lg=<?= $lg ?>">Links</a></li>
 							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="index.php?pg=gallery&lg=<?= $lg ?>">Gallery</a></li>
 							<li id="menu-item-02105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="#" onclick="return false;">Ask FPDD</a>
