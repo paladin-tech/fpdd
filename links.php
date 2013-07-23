@@ -1,11 +1,4 @@
-<?
-if(isset($_POST['btnSubmit'])) {
-	foreach($_POST as $key => $value) $$key = $value;
-	$infosystem->Execute("UPDATE `fpdd_page` SET `title_{$lg}` = '{$txtTitle}', `content_{$lg}` = '{$txtContent}' WHERE `pageid` = '{$pg}'");
-}
-
-list($title, $content) = $infosystem->Execute("SELECT `title_{$lg}` title, `content_{$lg}` content FROM `fpdd_page` WHERE `pageid` = '{$pg}'")->fields;
-?>
+<? include('updatePage.php'); ?>
 <div class="primary_content_wrap">
 	<div class="container_24 clearfix">
 		<div id="content" class="grid_17 right suffix_1">

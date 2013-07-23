@@ -99,33 +99,33 @@ $loggedAsAdmin = true;
 						<h1><a href="index.php" title="FPDD"><img src="images/FPDD-Logo_transp.png" style="margin-top: -25px;"></a></h1>
 					</div>
 					<nav class="primary">
-						<ul id="topnav" class="sf-menu sf-js-enabled"><li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-203 current_page_item menu-item-205"><a href="index.php?pg=home">Home page</a></li>
+						<ul id="topnav" class="sf-menu sf-js-enabled"><li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-203 current_page_item menu-item-205"><a href="index.php?pg=home&lg=<?= $lg ?>">Home page</a></li>
 							<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="#" onclick="return false;">About</a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
-									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=overview">Overview</a></li>
-									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=assisstance">Assistance</a></li>
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=overview&lg=<?= $lg ?>">Overview</a></li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=assisstance&lg=<?= $lg ?>">Assistance</a></li>
 								</ul>
 							</li>
 							<li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="#" onclick="return false;">Research</a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
-									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=tourism-policy">Tourism Policy</a></li>
-									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=surveys">Surveys</a></li>
-									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=statistics">Statistics</a></li>
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=tourism-policy&lg=<?= $lg ?>">Tourism Policy</a></li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=surveys&lg=<?= $lg ?>">Surveys</a></li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=statistics&lg=<?= $lg ?>">Statistics</a></li>
 								</ul>
 							</li>
 							<li id="menu-item-0105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="#" onclick="return false;">News</a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
-									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=event-calendar">Event Calendar</a></li>
-									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=archive-common-use">Archive & Common Use</a></li>
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=event-calendar&lg=<?= $lg ?>">Event Calendar</a></li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=archive-common-use&lg=<?= $lg ?>">Archive & Common Use</a></li>
 								</ul>
 							</li>
-							<li id="menu-item-019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="index.php?pg=links">Links</a></li>
-							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="index.php?pg=gallery">Gallery</a></li>
+							<li id="menu-item-019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="index.php?pg=links&lg=<?= $lg ?>">Links</a></li>
+							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="index.php?pg=gallery&lg=<?= $lg ?>">Gallery</a></li>
 							<li id="menu-item-02105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="#" onclick="return false;">Ask FPDD</a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
-									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=contact">Direct Contact</a></li>
-									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="#">Online Forum</a></li>
-									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=site-opinion">Site Opinion</a></li>
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=contact&lg=<?= $lg ?>">Direct Contact</a></li>
+<!--									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="#">Online Forum</a></li>-->
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=site-opinion&lg=<?= $lg ?>">Site Opinion</a></li>
 								</ul>
 							</li>
 						</ul> </nav>
