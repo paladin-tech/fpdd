@@ -128,12 +128,10 @@ $loggedAsAdmin = true;
 									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="index.php?pg=links-others&lg=<?= $lg ?>">Others</a></li>
 								</ul>
 							</li>
-							<li id="menu-item-019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="index.php?pg=links&lg=<?= $lg ?>">Links</a></li>
 							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="index.php?pg=gallery&lg=<?= $lg ?>">Gallery</a></li>
 							<li id="menu-item-02105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="#" onclick="return false;">Ask FPDD</a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=contact&lg=<?= $lg ?>">Direct Contact</a></li>
-<!--									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="#">Online Forum</a></li>-->
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231"><a href="index.php?pg=site-opinion&lg=<?= $lg ?>">Site Opinion</a></li>
 								</ul>
 							</li>
