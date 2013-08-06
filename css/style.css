@@ -432,7 +432,8 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 
 .sf-menu>li {
-	margin-right: 36px;
+	margin-right: 28px;
+	/*margin-right: 36px;*/
 }
 
 .sf-menu>li>a {

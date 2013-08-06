@@ -9,32 +9,41 @@ $lg = (isset($_GET['lg']) && $_GET['lg'] == 'en') ? 'en' : 'bg';
 $loggedAsAdmin = true;
 
 $menuItems = array(
-	'Home page'              => array('en' => 'Home page', 'bg' => 'Начало'),
-	'About'                  => array('en' => 'About', 'bg' => 'За нас'),
-	'Overview'               => array('en' => 'Overview', 'bg' => 'Общо представяне'),
+	'Home'                   => array('en' => 'Home', 'bg' => 'Начало'),
+	'About Us'               => array('en' => 'About Us', 'bg' => 'За нас'),
+	'Overview'               => array('en' => 'Overview', 'bg' => 'За проекта'),
 	'Assistance'             => array('en' => 'Assistance', 'bg' => 'Услуги'),
-	'Research'               => array('en' => 'Research', 'bg' => 'Проучване'),
-	'Tourism Policy'         => array('en' => 'Tourism Policy', 'bg' => 'Туристическа политика'),
-	'Surveys'                => array('en' => 'Surveys', 'bg' => 'Проучвания'),
-	'Statistics'             => array('en' => 'Statistics', 'bg' => 'Статистика'),
+	'FPDD Team'              => array('en' => 'FPDD Team', 'bg' => 'Екип'),
 	'News'                   => array('en' => 'News', 'bg' => 'Новини'),
+	'Events & Activities'    => array('en' => 'Events & Activities', 'bg' => 'Събития и дейности'),
 	'Event Calendar'         => array('en' => 'Event Calendar', 'bg' => 'Събития'),
-	'Archive & Common Use'   => array('en' => 'Archive & Common Use', 'bg' => 'Архив и често ползване'),
+	'FPDD Materials'         => array('en' => 'FPDD Materials', 'bg' => 'FPDD Материали'),
+	'Projects'               => array('en' => 'Projects', 'bg' => 'Проекти'),
+	'Operational Programmes' => array('en' => 'Operational Programmes', 'bg' => 'Оперативни програми'),
+	'Current Calls'          => array('en' => 'Current Calls', 'bg' => 'Актуални покани'),
+	'Danube Projects'        => array('en' => 'Danube Projects', 'bg' => 'Проекти за Дунав'),
+	'Resources'              => array('en' => 'Resources', 'bg' => 'Ресурси'),
+	'Strategic Documents'    => array('en' => 'Strategic Documents', 'bg' => 'Стратегически документи'),
+	'Research and Analysis'  => array('en' => 'Research and Analysis', 'bg' => 'Проучвания и анализи'),
+	'Statistics'             => array('en' => 'Statistics', 'bg' => 'Статистика'),
+	'Regulatory Documents'   => array('en' => 'Regulatory Documents', 'bg' => 'Нормативни документи'),
+	'Gallery'                => array('en' => 'Gallery', 'bg' => 'Галерия'),
 	'Links'                  => array('en' => 'Links', 'bg' => 'Линкове'),
 	'Main Partners'          => array('en' => 'Main Partners', 'bg' => 'Основни партньори'),
 	'Danube Municipalities'  => array('en' => 'Danube Municipalities', 'bg' => 'Дунавски общини'),
 	'Tourism Organizations'  => array('en' => 'Tourism Organizations', 'bg' => 'Туристически организации'),
 	'International Partners' => array('en' => 'International Partners', 'bg' => 'Международни партньори'),
 	'Others'                 => array('en' => 'Others', 'bg' => 'Други'),
-	'Gallery'                => array('en' => 'Gallery', 'bg' => 'Галерия'),
 	'Ask FPDD'               => array('en' => 'Ask FPDD', 'bg' => 'Попитайте FPDD'),
 	'Direct Contact'         => array('en' => 'Direct Contact', 'bg' => 'Директен контакт'),
-	'Site Opinion'           => array('en' => 'Site Opinion', 'bg' => 'Мнение за сайта'),
+//	'Tourism Policy'         => array('en' => 'Tourism Policy', 'bg' => 'Туристическа политика'),
+//	'Surveys'                => array('en' => 'Surveys', 'bg' => 'Проучвания'),
+//	'Archive & Common Use'   => array('en' => 'Archive & Common Use', 'bg' => 'Архив и често ползване'),
+//	'Site Opinion'           => array('en' => 'Site Opinion', 'bg' => 'Мнение за сайта'),
 );
 ?>
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US"
-      class=" js flexbox rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent">
+<html dir="ltr" lang="en-US" class=" js flexbox rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent">
 <!--<![endif]-->
 <head>
 	<title>FPDD</title>
@@ -47,8 +56,7 @@ $menuItems = array(
 	<![endif]-->
 	<!--[if lt IE 8]>
 	<div style=' clear: both; text-align:center; position: relative;'>
-		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img
-			src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt=""/></a>
+		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt=""/></a>
 	</div>
 	<![endif]-->
 	<link rel="stylesheet" type="text/css" media="all" href="css/normalize.css">
@@ -139,10 +147,10 @@ $menuItems = array(
 					<nav class="primary">
 						<ul id="topnav" class="sf-menu sf-js-enabled">
 							<li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-203 current_page_item menu-item-205">
-								<a href="index.php?pg=home&lg=<?= $lg ?>"><?= $menuItems['Home page'][$lg] ?></a>
+								<a href="index.php?pg=home&lg=<?= $lg ?>"><?= $menuItems['Home'][$lg] ?></a>
 							</li>
 							<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['About'][$lg] ?></a>
+								<a href="#" onclick="return false;"><?= $menuItems['About Us'][$lg] ?></a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
 										<a href="index.php?pg=overview&lg=<?= $lg ?>"><?= $menuItems['Overview'][$lg] ?></a>
@@ -150,32 +158,58 @@ $menuItems = array(
 									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
 										<a href="index.php?pg=assisstance&lg=<?= $lg ?>"><?= $menuItems['Assistance'][$lg] ?></a>
 									</li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
+										<a href="index.php?pg=fpdd-team&lg=<?= $lg ?>"><?= $menuItems['FPDD Team'][$lg] ?></a>
+									</li>
 								</ul>
+							</li>
+							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19">
+								<a href="index.php?pg=news&lg=<?= $lg ?>"><?= $menuItems['News'][$lg] ?></a>
 							</li>
 							<li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['Research'][$lg] ?></a>
-								<ul class="sub-menu" style="display: none; visibility: hidden;">
-									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
-										<a href="index.php?pg=tourism-policy&lg=<?= $lg ?>"><?= $menuItems['Tourism Policy'][$lg] ?></a>
-									</li>
-									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
-										<a href="index.php?pg=surveys&lg=<?= $lg ?>"><?= $menuItems['Surveys'][$lg] ?></a>
-									</li>
-									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
-										<a href="index.php?pg=statistics&lg=<?= $lg ?>"><?= $menuItems['Statistics'][$lg] ?></a>
-									</li>
-								</ul>
-							</li>
-							<li id="menu-item-0105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['News'][$lg] ?></a>
+								<a href="#" onclick="return false;"><?= $menuItems['Events & Activities'][$lg] ?></a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
 										<a href="index.php?pg=event-calendar&lg=<?= $lg ?>"><?= $menuItems['Event Calendar'][$lg] ?></a>
 									</li>
 									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
-										<a href="index.php?pg=archive-common-use&lg=<?= $lg ?>"><?= $menuItems['Archive & Common Use'][$lg] ?></a>
+										<a href="index.php?pg=fpdd-materials&lg=<?= $lg ?>"><?= $menuItems['FPDD Materials'][$lg] ?></a>
 									</li>
 								</ul>
+							</li>
+							<li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
+								<a href="#" onclick="return false;"><?= $menuItems['Projects'][$lg] ?></a>
+								<ul class="sub-menu" style="display: none; visibility: hidden;">
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
+										<a href="index.php?pg=operational-programmes&lg=<?= $lg ?>"><?= $menuItems['Operational Programmes'][$lg] ?></a>
+									</li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
+										<a href="index.php?pg=current-calls&lg=<?= $lg ?>"><?= $menuItems['Current Calls'][$lg] ?></a>
+									</li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
+										<a href="index.php?pg=danube-projects&lg=<?= $lg ?>"><?= $menuItems['Danube Projects'][$lg] ?></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
+								<a href="#" onclick="return false;"><?= $menuItems['Resources'][$lg] ?></a>
+								<ul class="sub-menu" style="display: none; visibility: hidden;">
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
+										<a href="index.php?pg=strategic-documents&lg=<?= $lg ?>"><?= $menuItems['Strategic Documents'][$lg] ?></a>
+									</li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
+										<a href="index.php?pg=research-and-analysis&lg=<?= $lg ?>"><?= $menuItems['Research and Analysis'][$lg] ?></a>
+									</li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
+										<a href="index.php?pg=statistics&lg=<?= $lg ?>"><?= $menuItems['Statistics'][$lg] ?></a>
+									</li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
+										<a href="index.php?pg=regulatory-documents&lg=<?= $lg ?>"><?= $menuItems['Regulatory Documents'][$lg] ?></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19">
+								<a href="index.php?pg=gallery&lg=<?= $lg ?>"><?= $menuItems['Gallery'][$lg] ?></a>
 							</li>
 							<li id="menu-item-0205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
 								<a href="#" onclick="return false;"><?= $menuItems['Links'][$lg] ?></a>
@@ -197,20 +231,14 @@ $menuItems = array(
 									</li>
 								</ul>
 							</li>
-							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19">
-								<a href="index.php?pg=gallery&lg=<?= $lg ?>"><?= $menuItems['Gallery'][$lg] ?></a>
-							</li>
-							<li id="menu-item-02105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['Ask FPDD'][$lg] ?></a>
-								<ul class="sub-menu" style="display: none; visibility: hidden;">
-									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
-										<a href="index.php?pg=contact&lg=<?= $lg ?>"><?= $menuItems['Direct Contact'][$lg] ?></a>
-									</li>
-									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
-										<a href="index.php?pg=site-opinion&lg=<?= $lg ?>"><?= $menuItems['Site Opinion'][$lg] ?></a>
-									</li>
-								</ul>
-							</li>
+<!--							<li id="menu-item-02105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">-->
+<!--								<a href="#" onclick="return false;">--><?//= $menuItems['Ask FPDD'][$lg] ?><!--</a>-->
+<!--								<ul class="sub-menu" style="display: none; visibility: hidden;">-->
+<!--									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">-->
+<!--										<a href="index.php?pg=contact&lg=--><?//= $lg ?><!--">--><?//= $menuItems['Direct Contact'][$lg] ?><!--</a>-->
+<!--									</li>-->
+<!--								</ul>-->
+<!--							</li>-->
 						</ul>
 					</nav>
 					<div id="top-search">
