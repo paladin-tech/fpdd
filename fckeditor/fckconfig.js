@@ -114,7 +114,7 @@ FCKConfig.ToolbarSets["Default"] = [
 ] ;
 
 FCKConfig.ToolbarSets["Moj"] = [
-	['Source','Bold','Italic','Style','Table','-','PasteText','PasteWord','RemoveFormat','-','OrderedList','UnorderedList','-','Image','-','Link','Unlink','-','Preview']
+	['Source','Bold','Italic','Style','Table','-','PasteText','PasteWord','RemoveFormat','-','OrderedList','UnorderedList','-','Image','-','Link','Unlink']
 ] ;
 
 FCKConfig.ToolbarSets["Basic"] = [
