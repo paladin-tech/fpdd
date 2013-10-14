@@ -28,7 +28,7 @@ $menuItems = array(
 	'Statistics'             => array('en' => 'Statistics', 'bg' => 'Статистика'),
 	'Regulatory Documents'   => array('en' => 'Regulatory Documents', 'bg' => 'Нормативни документи'),
 	'Gallery'                => array('en' => 'Gallery', 'bg' => 'Галерия'),
-	'Links'                  => array('en' => 'Links', 'bg' => 'Линкове'),
+	'Links'                  => array('en' => 'Links', 'bg' => 'Връзки'),
 	'Main Partners'          => array('en' => 'Main Partners', 'bg' => 'Основни партньори'),
 	'Danube Municipalities'  => array('en' => 'Danube Municipalities', 'bg' => 'Дунавски общини'),
 	'Tourism Organizations'  => array('en' => 'Tourism Organizations', 'bg' => 'Туристически организации'),
@@ -36,6 +36,7 @@ $menuItems = array(
 	'Others'                 => array('en' => 'Others', 'bg' => 'Други'),
 	'Ask FPDD'               => array('en' => 'Ask FPDD', 'bg' => 'Попитайте FPDD'),
 	'Direct Contact'         => array('en' => 'Direct Contact', 'bg' => 'Директен контакт'),
+	'EUSDR'                  => array('en' => 'EUSDR', 'bg' => 'Дунавска стратегия'),
 //	'Tourism Policy'         => array('en' => 'Tourism Policy', 'bg' => 'Туристическа политика'),
 //	'Surveys'                => array('en' => 'Surveys', 'bg' => 'Проучвания'),
 //	'Archive & Common Use'   => array('en' => 'Archive & Common Use', 'bg' => 'Архив и често ползване'),
@@ -150,7 +151,7 @@ $menuItems = array(
 								<a href="index.php?pg=home&lg=<?= $lg ?>"><?= $menuItems['Home'][$lg] ?></a>
 							</li>
 							<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['About Us'][$lg] ?></a>
+								<a href="index.php?pg=overview&lg=<?= $lg ?>"><?= $menuItems['About Us'][$lg] ?></a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
 										<a href="index.php?pg=overview&lg=<?= $lg ?>"><?= $menuItems['Overview'][$lg] ?></a>
@@ -167,18 +168,18 @@ $menuItems = array(
 								<a href="index.php?pg=news&lg=<?= $lg ?>"><?= $menuItems['News'][$lg] ?></a>
 							</li>
 							<li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['Events & Activities'][$lg] ?></a>
+								<a href="index.php?pg=event-calendar&lg=<?= $lg ?>"><?= $menuItems['Events & Activities'][$lg] ?></a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
 										<a href="index.php?pg=event-calendar&lg=<?= $lg ?>"><?= $menuItems['Event Calendar'][$lg] ?></a>
 									</li>
-									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
-										<a href="index.php?pg=fpdd-materials&lg=<?= $lg ?>"><?= $menuItems['FPDD Materials'][$lg] ?></a>
+									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
+										<a href="index.php?pg=eusdr&lg=<?= $lg ?>"><?= $menuItems['EUSDR'][$lg] ?></a>
 									</li>
 								</ul>
 							</li>
 							<li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['Projects'][$lg] ?></a>
+								<a href="index.php?pg=operational-programmes&lg=<?= $lg ?>"><?= $menuItems['Projects'][$lg] ?></a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
 										<a href="index.php?pg=operational-programmes&lg=<?= $lg ?>"><?= $menuItems['Operational Programmes'][$lg] ?></a>
@@ -192,7 +193,7 @@ $menuItems = array(
 								</ul>
 							</li>
 							<li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['Resources'][$lg] ?></a>
+								<a href="index.php?pg=strategic-documents&lg=<?= $lg ?>"><?= $menuItems['Resources'][$lg] ?></a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
 										<a href="index.php?pg=strategic-documents&lg=<?= $lg ?>"><?= $menuItems['Strategic Documents'][$lg] ?></a>
@@ -206,13 +207,16 @@ $menuItems = array(
 									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
 										<a href="index.php?pg=regulatory-documents&lg=<?= $lg ?>"><?= $menuItems['Regulatory Documents'][$lg] ?></a>
 									</li>
+									<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230">
+										<a href="index.php?pg=fpdd-materials&lg=<?= $lg ?>"><?= $menuItems['FPDD Materials'][$lg] ?></a>
+									</li>
 								</ul>
 							</li>
 							<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19">
 								<a href="index.php?pg=gallery&lg=<?= $lg ?>"><?= $menuItems['Gallery'][$lg] ?></a>
 							</li>
 							<li id="menu-item-0205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-								<a href="#" onclick="return false;"><?= $menuItems['Links'][$lg] ?></a>
+								<a href="index.php?pg=main-partners&lg=<?= $lg ?>"><?= $menuItems['Links'][$lg] ?></a>
 								<ul class="sub-menu" style="display: none; visibility: hidden;">
 									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">
 										<a href="index.php?pg=main-partners&lg=<?= $lg ?>"><?= $menuItems['Main Partners'][$lg] ?></a>
@@ -232,7 +236,7 @@ $menuItems = array(
 								</ul>
 							</li>
 <!--							<li id="menu-item-02105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">-->
-<!--								<a href="#" onclick="return false;">--><?//= $menuItems['Ask FPDD'][$lg] ?><!--</a>-->
+<!--								<a href="#">--><?//= $menuItems['Ask FPDD'][$lg] ?><!--</a>-->
 <!--								<ul class="sub-menu" style="display: none; visibility: hidden;">-->
 <!--									<li id="menu-item-231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-231">-->
 <!--										<a href="index.php?pg=contact&lg=--><?//= $lg ?><!--">--><?//= $menuItems['Direct Contact'][$lg] ?><!--</a>-->
@@ -242,7 +246,7 @@ $menuItems = array(
 						</ul>
 					</nav>
 					<div id="top-search">
-						<form method="get" action="http://livedemo00.template-help.com/wordpress_37712/">
+						<form method="get" action="#">
 							<input type="text" name="s" class="input-search">
 							<input type="submit" value="Search" id="submit">
 						</form>
@@ -279,29 +283,48 @@ $menuItems = array(
 		<div class="footer">
 			<div class="container_24 clearfix">
 				<div id="widget-footer">
-					<div id="my_popularpostswidget-2" class="grid_5 suffix_1"><h1>Most popular articles</h1>
-						<ul class="popular-posts">
-							<li>
-								<a href="http://livedemo00.template-help.com/wordpress_37712/uncategorized/vestibulum-iaculis/" title="Vestibulum iaculis">Vestibulum iaculis</a>
-							</li>
-							<li>
-								<a href="http://livedemo00.template-help.com/wordpress_37712/adipiscing-elit/lacinia-est/" title="Lacinia est">Lacinia est</a>
-							</li>
-							<li>
-								<a href="http://livedemo00.template-help.com/wordpress_37712/adipiscing-elit/proin-dictum/" title="Proin dictum">Proin dictum</a>
-							</li>
-							<li>
-								<a href="http://livedemo00.template-help.com/wordpress_37712/consectetuer/elementum-velit/" title="Elementum velit">Elementum velit</a>
-							</li>
-							<li>
-								<a href="http://livedemo00.template-help.com/wordpress_37712/pellentesque-sed/consequat-ante/" title="Consequat ante">Consequat ante</a>
-							</li>
-							<li>
-								<a href="http://livedemo00.template-help.com/wordpress_37712/uncategorized/lorem-ipsum-dolor/" title="Lorem ipsum dolor">Lorem ipsum dolor</a>
-							</li>
-						</ul>
-					</div>
 					<div id="text-2" class="grid_5 suffix_1">
+						<h1>Contacts and information</h1>
+						<div class="textwidget">
+							<dl class="address">
+								<dt>8901 Marmora Road,<br>
+									Glasgow, D04 89GR.
+								</dt>
+								<dd>
+									<ul>
+										<li><span>Freephone:</span>+1 800 559 6580</li>
+										<li><span>Telephone:</span>+1 800 603 6035</li>
+										<li><span>FAX:</span>+1 800 889 9898</li>
+									</ul>
+								</dd>
+								<dd class="email">E-mail: <a href="#">mail@demolink.org
+										<script type="text/javascript">
+											/* <![CDATA[ */
+											(function () {
+												try {
+													var s, a, i, j, r, c, l, b = document.getElementsByTagName("script");
+													l = b[b.length - 1].previousSibling;
+													a = l.getAttribute('data-cfemail');
+													if (a) {
+														s = '';
+														r = parseInt(a.substr(0, 2), 16);
+														for (j = 2; a.length - j; j += 2) {
+															c = parseInt(a.substr(j, 2), 16) ^ r;
+															s += String.fromCharCode(c);
+														}
+														s = document.createTextNode(s);
+														l.parentNode.replaceChild(s, l);
+													}
+												} catch (e) {
+												}
+											})();
+											/* ]]> */
+										</script>
+									</a></dd>
+							</dl>
+						</div>
+					</div>
+					<div class="grid_5 suffix_1">
 						<h1>Contacts and information</h1>
 						<div class="textwidget">
 							<dl class="address">
