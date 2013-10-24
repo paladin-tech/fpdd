@@ -32,7 +32,7 @@
 					<?
 					} else {
 					?>
-					<h2><?= $title ?></h2>
+					<h2>a<?= $title ?></h2>
 						<?
 						if($loggedAsAdmin) {
 							?>
