@@ -246,10 +246,26 @@ $menuItems = array(
 						</ul>
 					</nav>
 					<div id="top-search">
+<!--						<script>-->
+<!--							(function() {-->
+<!--								var cx = '001364619601400234806:jbjjfco21ak';-->
+<!--								var gcse = document.createElement('script');-->
+<!--								gcse.type = 'text/javascript';-->
+<!--								gcse.async = true;-->
+<!--								gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +-->
+<!--									'//www.google.com/cse/cse.js?cx=' + cx;-->
+<!--								var s = document.getElementsByTagName('script')[0];-->
+<!--								s.parentNode.insertBefore(gcse, s);-->
+<!--							})();-->
+<!--						</script>-->
+<!--						<gcse:search></gcse:search>-->
 						<form method="get" action="#">
 							<input type="text" name="s" class="input-search">
 							<input type="submit" value="Search" id="submit">
 						</form>
+						<script>
+							$('.gsc-control-cse').css('padding', '0');
+						</script>
 					</div>
 					<div id="widget-header">
 						<div id="my_requestquotewidget-4" class="widget-header">
@@ -263,7 +279,7 @@ $menuItems = array(
 								<!--								</div>-->
 								<div>
 									<a href="index.php?pg=<?= $pg ?>&lg=en<?= (isset($_GET['admin'])) ? "&admin" : "" ?>">
-										<img src="images/gb.png"></a>&nbsp;<a href="index.php?pg=<?= $pg ?>&lg=bg<?= (isset($_GET['admin'])) ? "&admin" : "" ?>"><img src="images/bg.png">
+										<img src="images/gb.png" title="English"></a>&nbsp;&nbsp;<a href="index.php?pg=<?= $pg ?>&lg=bg<?= (isset($_GET['admin'])) ? "&admin" : "" ?>"><img src="images/bg.png" title="Bulgarian">
 									</a>
 								</div>
 							</div>

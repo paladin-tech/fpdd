@@ -541,6 +541,7 @@ a:focus>.sf-sub-indicator, a:hover>.sf-sub-indicator, a:active>.sf-sub-indicator
 	position: absolute;
 	right: 0;
 	top: 111px;
+	width: 250px;
 }
 
 #top-search .input-search {
@@ -1217,7 +1218,8 @@ a[rel="author"] {
 	height: 241px;
 	width: 269px;
 	position: relative;
-	background: #e7e7e7 url(../images/loading-folio.gif) 50% 50% no-repeat;
+	background: url(../images/loading-folio.gif) 50% 50% no-repeat;
+	/*background: #e7e7e7 url(../images/loading-folio.gif) 50% 50% no-repeat;*/
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
@@ -1291,8 +1293,8 @@ a[rel="author"] {
 
 #gallery.one_column .zoom-icon {
 	top: -252px;
-	width: 549px;
-	height: 351px;
+	width: 500px;
+	height: 320px;
 }
 
 #gallery.one_column .folio-desc {
@@ -2571,19 +2573,19 @@ ul.video li .play:hover {
 }
 
 .audiojs .play {
-	background: url(js/audiojs/player-graphics.gif) -2px -1px no-repeat;
+	background: url(../js/audiojs/player-graphics.gif) -2px -1px no-repeat;
 }
 
 .audiojs .loading {
-	background: url(js/audiojs/player-graphics.gif) -2px -31px no-repeat;
+	background: url(../js/audiojs/player-graphics.gif) -2px -31px no-repeat;
 }
 
 .audiojs .error {
-	background: url(js/audiojs/player-graphics.gif) -2px -61px no-repeat;
+	background: url(../js/audiojs/player-graphics.gif) -2px -61px no-repeat;
 }
 
 .audiojs .pause {
-	background: url(js/audiojs/player-graphics.gif) -2px -91px no-repeat;
+	background: url(../js/audiojs/player-graphics.gif) -2px -91px no-repeat;
 }
 
 .playing .play, .playing .loading, .playing .error {
@@ -2907,4 +2909,20 @@ span.wpcf7-form-control-wrap {
 
 .clearfix {
 	display: block;
+}
+
+.frm div {
+	float: left;
+	padding-right: 20px;
+	/*height: 110px;*/
+	vertical-align: middle;
+}
+
+.frm input {
+	width: 150px;
+}
+
+.frm li {
+	/*float: left;*/
+	padding: 0 20px 20px 0;
 }

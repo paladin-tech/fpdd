@@ -32,7 +32,7 @@
 					<?
 					} else {
 					?>
-					<h2><?= $title ?></h2>
+						<h2><?= $title ?></h2>
 						<?
 						if($loggedAsAdmin) {
 							?>
@@ -40,10 +40,11 @@
 						<?
 						}
 						?>
+						<br><br>
 						<?= $content ?>
-						<?
-						}
-						?></h2>
+					<?
+					}
+					?>
 				</article>
 			</div>
 		</div>

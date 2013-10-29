@@ -1,3 +1,9 @@
+<?
+//$infosystem->debug = true;
+$rsNews = $infosystem->Execute("SELECT `news_id`, `title_{$lg}` title, `date` FROM `fpdd_news` ORDER BY `date` DESC");
+list($eventId, $eventTitle, $eventDate) = $infosystem->Execute("SELECT `event_id`, `title_{$lg}` title, `date` FROM `fpdd_event` ORDER BY `date` DESC LIMIT 1")->fields;
+list($eventPhotoId) = $infosystem->Execute("SELECT `photo_id` FROM `fpdd_gallery` WHERE `event_id` = {$eventId} LIMIT 1")->fields;
+?>
 <div class="primary_content_wrap">
 	<div class="container_24 clearfix"><div class="grid_18">
 	<div class="clearfix">
@@ -5,108 +11,108 @@
 			<div id="faded">
 				<ul class="slides" style="position: relative;">
 					<li class="item" style="position: absolute; top: 0px; left: 0px; z-index: 0; display: none;">
-						<a href="http://livedemo00.template-help.com/wordpress_37712/slide-view/lorem-ipsum-dolor-sit/">
+						<a href="#">
 							<img width="460" height="341" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide04.jpg" class="attachment-slider-post-thumbnail wp-post-image" alt="slide04" title="slide04">
-							<div class="caption"><div class="inner">
+							<div class="caption">
+								<div class="inner">
 									<time datetime="2011-07-14T20:02">July 14, 2011</time>
 									<div class="excerpt">Aliquam erat volutpat. In hac habitasse platea dictumst. Nam tempor convallis neque quis euismod. Nulla facilisi.... </div>
-								</div></div>
+								</div>
+							</div>
 						</a>
 					</li>
 					<li class="item" style="position: absolute; top: 0px; left: 0px; z-index: 0; display: none;">
-						<a href="http://livedemo00.template-help.com/wordpress_37712/slide-view/vivamus-eget-nibh/">
+						<a href="#">
 							<img width="460" height="341" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide03.jpg" class="attachment-slider-post-thumbnail wp-post-image" alt="slide03" title="slide03">
-							<div class="caption"><div class="inner">
+							<div class="caption">
+								<div class="inner">
 									<time datetime="2011-07-14T20:02">July 14, 2011</time>
 									<div class="excerpt">In et ante enim. Pellentesque vel tristique nibh. Mauris sit amet tortor nulla, ac rhoncus mauris.... </div>
-								</div></div>
+								</div>
+							</div>
 						</a>
 					</li>
 					<li class="item" style="position: absolute; top: 0px; left: 0px; z-index: 0; display: none;">
-						<a href="http://livedemo00.template-help.com/wordpress_37712/slide-view/aenean-nec-eros/">
+						<a href="#">
 							<img width="460" height="341" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide02.jpg" class="attachment-slider-post-thumbnail wp-post-image" alt="slide02" title="slide02">
-							<div class="caption"><div class="inner">
+							<div class="caption">
+								<div class="inner">
 									<time datetime="2011-07-14T20:01">July 14, 2011</time>
 									<div class="excerpt">Phasellus quis tortor purus. Cras porta egestas dolor. Aenean nec tortor massa, ac vestibulum elit. Duis... </div>
-								</div></div>
+								</div>
+							</div>
 						</a>
 					</li>
 					<li class="item" style="position: absolute; top: 0px; left: 0px; z-index: 0;">
-						<a href="http://livedemo00.template-help.com/wordpress_37712/slide-view/interdum-vitaedapibus/">
+						<a href="#">
 							<img width="460" height="341" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide01.jpg" class="attachment-slider-post-thumbnail wp-post-image" alt="slide01" title="slide01">
-							<div class="caption"><div class="inner">
+							<div class="caption">
+								<div class="inner">
 									<time datetime="2011-07-14T20:01">July 14, 2011</time>
 									<div class="excerpt">Curabitur nisl enim, ornare porttitor feugiat in, placerat at mi. Lorem ipsum dolor sit amet, consectetur... </div>
-								</div></div>
+								</div>
+							</div>
 						</a>
 					</li>
 				</ul>
 				<ul class="thumbs pagination">
 					<li class="item item-0">
 						<a href="#" rel="0" class="thumb">
-							<img width="53" height="53" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide04-53x53.jpg" class="attachment-slider-small-thumbnail wp-post-image" alt="slide04" title="slide04"> <h4>Lorem ipsum dolor sit</h4> <div class="excerpt">Aliquam erat volutpat. In hac habitasse platea... </div>
+							<img width="53" height="53" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide04-53x53.jpg" class="attachment-slider-small-thumbnail wp-post-image" alt="slide04" title="slide04">
+							<h4>Lorem ipsum dolor sit</h4>
+							<div class="excerpt">Aliquam erat volutpat. In hac habitasse platea... </div>
 						</a>
 						<div class="arrow"></div>
 					</li>
 					<li class="item item-1">
 						<a href="#" rel="1" class="thumb">
-							<img width="53" height="53" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide03-53x53.jpg" class="attachment-slider-small-thumbnail wp-post-image" alt="slide03" title="slide03"> <h4>Vivamus eget nibh</h4> <div class="excerpt">In et ante enim. Pellentesque vel tristique... </div>
+							<img width="53" height="53" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide03-53x53.jpg" class="attachment-slider-small-thumbnail wp-post-image" alt="slide03" title="slide03">
+							<h4>Vivamus eget nibh</h4>
+							<div class="excerpt">In et ante enim. Pellentesque vel tristique... </div>
 						</a>
 						<div class="arrow"></div>
 					</li>
 					<li class="item item-2">
 						<a href="#" rel="2" class="thumb">
-							<img width="53" height="53" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide02-53x53.jpg" class="attachment-slider-small-thumbnail wp-post-image" alt="slide02" title="slide02"> <h4>Aenean nec eros</h4> <div class="excerpt">Phasellus quis tortor purus. Cras porta egestas... </div>
+							<img width="53" height="53" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide02-53x53.jpg" class="attachment-slider-small-thumbnail wp-post-image" alt="slide02" title="slide02">
+							<h4>Aenean nec eros</h4>
+							<div class="excerpt">Phasellus quis tortor purus. Cras porta egestas... </div>
 						</a>
 						<div class="arrow"></div>
 					</li>
 					<li class="item item-3 current">
 						<a href="#" rel="3" class="thumb">
-							<img width="53" height="53" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide01-53x53.jpg" class="attachment-slider-small-thumbnail wp-post-image" alt="slide01" title="slide01"> <h4>Interdum vitae,dapibus</h4> <div class="excerpt">Curabitur nisl enim, ornare porttitor feugiat in,... </div>
+							<img width="53" height="53" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/07/slide01-53x53.jpg" class="attachment-slider-small-thumbnail wp-post-image" alt="slide01" title="slide01">
+							<h4>Interdum vitae,dapibus</h4>
+							<div class="excerpt">Curabitur nisl enim, ornare porttitor feugiat in,... </div>
 						</a>
 						<div class="arrow"></div>
 					</li>
 				</ul>
-			</div> </section>
+			</div>
+		</section>
 	</div>
 	<div class="grid_8 suffix_1 alpha">
-		<div id="my_postwidget-2" class="widget_my_postwidget widget-content"> <h1>Most recent news</h1>
+		<div id="my_postwidget-2" class="widget_my_postwidget widget-content">
+			<h1>Most recent news</h1>
 			<ul class="latestpost style-1">
+				<?
+				while(!$rsNews->EOF) {
+					list($news_id, $title, $date) = $rsNews->fields;
+				?>
 				<li class="">
-
-					<div class="thumb"><a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-4/"><img width="58" height="56" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img01-58x56.jpg" class="attachment-small-post-thumbnail wp-post-image" alt="post-img01" title="post-img01"></a></div>
+					<div class="thumb"><a href="index.php?pg=news&lg=<?= $lg ?>"><img width="58" height="56" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img01-58x56.jpg" class="attachment-small-post-thumbnail wp-post-image" alt="<?= $title ?>" title="<?= $title ?>"></a></div>
 					<div class="extra-wrap">
-						<h2><a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-4/" rel="bookmark" title="Permanent Link to Praesent justo dolor, lobortis quis,  lobortis dignissim, pulvinar ac, lorem"><span><span><span>Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem</span></span></span></a></h2>
-						<time datetime="2012-01-23T12:52">January 23, 2012</time> &nbsp;|&nbsp; <a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-4/#respond" class="comments-link" title="Comment on Praesent justo dolor, lobortis quis,  lobortis dignissim, pulvinar ac, lorem">No comments</a> </div>
-
+						<h2><a href="index.php?pg=news&lg=<?= $lg ?>" rel="bookmark" title="<?= $title ?>"><span><span><span><?= $title ?></span></span></span></a></h2>
+						<time datetime="<?= $date ?>"><?= $date ?></time>
+					</div>
 				</li>
-				<li class="">
-
-					<div class="thumb"><a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-3/"><img width="58" height="56" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img02-58x56.jpg" class="attachment-small-post-thumbnail wp-post-image" alt="post-img02" title="post-img02"></a></div>
-					<div class="extra-wrap">
-						<h2><a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-3/" rel="bookmark" title="Permanent Link to Praesent justo dolor, lobortis quis,  lobortis dignissim, pulvinar ac, lorem"><span><span><span>Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem</span></span></span></a></h2>
-						<time datetime="2012-01-23T12:52">January 23, 2012</time> &nbsp;|&nbsp; <a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-3/#respond" class="comments-link" title="Comment on Praesent justo dolor, lobortis quis,  lobortis dignissim, pulvinar ac, lorem">No comments</a> </div>
-
-				</li>
-				<li class="">
-
-					<div class="thumb"><a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-2/"><img width="58" height="56" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img03-58x56.jpg" class="attachment-small-post-thumbnail wp-post-image" alt="post-img03" title="post-img03"></a></div>
-					<div class="extra-wrap">
-						<h2><a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-2/" rel="bookmark" title="Permanent Link to Praesent justo dolor, lobortis quis,  lobortis dignissim, pulvinar ac, lorem"><span><span><span>Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem</span></span></span></a></h2>
-						<time datetime="2012-01-23T12:49">January 23, 2012</time> &nbsp;|&nbsp; <a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-2/#respond" class="comments-link" title="Comment on Praesent justo dolor, lobortis quis,  lobortis dignissim, pulvinar ac, lorem">No comments</a> </div>
-
-				</li>
-				<li class="">
-
-					<div class="thumb"><a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem/"><img width="58" height="56" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2011/01/post-img04-58x56.jpg" class="attachment-small-post-thumbnail wp-post-image" alt="post-img04" title="post-img04"></a></div>
-					<div class="extra-wrap">
-						<h2><a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem/" rel="bookmark" title="Permanent Link to Praesent justo dolor, lobortis quis,  lobortis dignissim, pulvinar ac, lorem"><span><span><span>Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem</span></span></span></a></h2>
-						<time datetime="2011-01-14T20:25">January 14, 2011</time> &nbsp;|&nbsp; <a href="http://livedemo00.template-help.com/wordpress_37712/dolor/praesent-justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem/#respond" class="comments-link" title="Comment on Praesent justo dolor, lobortis quis,  lobortis dignissim, pulvinar ac, lorem">No comments</a> </div>
-
-				</li>
+				<?
+					$rsNews->MoveNext();
+				}
+				?>
 			</ul>
-
-			<a href="news-and-events/" class="button alt">show all news</a>
+			<a href="index.php?pg=news&lg=<?= $lg ?>" class="button alt">show all news</a>
 		</div>
 <!--		<div id="my_postwidget-3" class="widget_my_postwidget widget-content"> <h1>Our native city</h1>-->
 <!--			<ul class="latestpost style-2">-->
@@ -145,40 +151,38 @@
 <!--		</div>-->
 	</div>
 	<div class="grid_9 omega">
-		<div id="my_postwidget-4" class="widget_my_postwidget widget-content"> <h1>Events</h1>
+		<div id="my_postwidget-4" class="widget_my_postwidget widget-content">
+			<h1>Events</h1>
 			<ul class="latestpost style-3">
 				<li class="sticky">
-
-					<div class="thumb fnone"><a href="http://livedemo00.template-help.com/wordpress_37712/sport/justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-coloreum-ipsum-2/"><img width="347" height="176" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img08-347x176.jpg" class="attachment-extra-post-thumbnail wp-post-image" alt="post-img08" title="post-img08"></a></div>
-					<h2><a href="http://livedemo00.template-help.com/wordpress_37712/sport/justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-coloreum-ipsum-2/" rel="bookmark" title="Permanent Link to Justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem coloreum ipsum"><span><span><span>Justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem coloreum ipsum</span></span></span></a></h2>
-					<time datetime="2012-01-23T14:43">January 23, 2012</time> &nbsp;|&nbsp; <a href="http://livedemo00.template-help.com/wordpress_37712/sport/justo-dolor-lobortis-quis-lobortis-dignissim-pulvinar-ac-lorem-coloreum-ipsum-2/#respond" class="comments-link" title="Comment on Justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem coloreum ipsum">No comments</a> <div class="excerpt"></div>
-
-
-
+					<div class="thumb fnone"><a href="index.php?pg=event-calendar&lg=<?= $lg ?>"><img width="347" height="176" src="images/gallery-<?= $eventId ?>/photo-<?= $eventPhotoId ?>-500.jpg" class="attachment-extra-post-thumbnail wp-post-image" alt="<?= $eventTitle ?>" title="<?= $eventTitle ?>"></a></div>
+					<h2><a href="index.php?pg=event-calendar&lg=<?= $lg ?>" rel="bookmark" title="<?= $eventTitle ?>"><span><span><span><?= $eventTitle ?></span></span></span></a></h2>
+					<time datetime="<?= $eventDate ?>"><?= $eventDate ?></time>
+					<div class="excerpt"></div>
 				</li>
-				<li class="">
-
-					<div class="thumb"><a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-4/"><img width="96" height="93" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img09-96x93.jpg" class="attachment-medium-post-thumbnail wp-post-image" alt="post-img09" title="post-img09"></a></div>
-					<h2><a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-4/" rel="bookmark" title="Permanent Link to Praesent justo dolor, lobortis"><span><span><span>Praesent justo dolor, lobortis</span></span></span></a></h2>
-					<div class="excerpt">Aliquam erat volutpat. In hac habitasse platea dictumst. Nam tempor convallis neque quis euismod. Nulla... </div>
-					<a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-4/" class="button">read more</a>
-
-
-
-				</li>
-				<li class="">
-
-					<div class="thumb"><a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-3/"><img width="96" height="93" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img10-96x93.jpg" class="attachment-medium-post-thumbnail wp-post-image" alt="post-img10" title="post-img10"></a></div>
-					<h2><a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-3/" rel="bookmark" title="Permanent Link to Praesent justo dolor, lobortis"><span><span><span>Praesent justo dolor, lobortis</span></span></span></a></h2>
-					<div class="excerpt">Aliquam erat volutpat. In hac habitasse platea dictumst. Nam tempor convallis neque quis euismod. Nulla... </div>
-					<a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-3/" class="button">read more</a>
-
-
-
-				</li>
+<!--				<li class="">-->
+<!---->
+<!--					<div class="thumb"><a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-4/"><img width="96" height="93" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img09-96x93.jpg" class="attachment-medium-post-thumbnail wp-post-image" alt="post-img09" title="post-img09"></a></div>-->
+<!--					<h2><a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-4/" rel="bookmark" title="Permanent Link to Praesent justo dolor, lobortis"><span><span><span>Praesent justo dolor, lobortis</span></span></span></a></h2>-->
+<!--					<div class="excerpt">Aliquam erat volutpat. In hac habitasse platea dictumst. Nam tempor convallis neque quis euismod. Nulla... </div>-->
+<!--					<a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-4/" class="button">read more</a>-->
+<!---->
+<!---->
+<!---->
+<!--				</li>-->
+<!--				<li class="">-->
+<!---->
+<!--					<div class="thumb"><a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-3/"><img width="96" height="93" src="http://livedemo00.template-help.com/wordpress_37712/wp-content/uploads/2012/01/post-img10-96x93.jpg" class="attachment-medium-post-thumbnail wp-post-image" alt="post-img10" title="post-img10"></a></div>-->
+<!--					<h2><a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-3/" rel="bookmark" title="Permanent Link to Praesent justo dolor, lobortis"><span><span><span>Praesent justo dolor, lobortis</span></span></span></a></h2>-->
+<!--					<div class="excerpt">Aliquam erat volutpat. In hac habitasse platea dictumst. Nam tempor convallis neque quis euismod. Nulla... </div>-->
+<!--					<a href="http://livedemo00.template-help.com/wordpress_37712/sport/praesent-justo-dolor-lobortis-3/" class="button">read more</a>-->
+<!---->
+<!---->
+<!---->
+<!--				</li>-->
 			</ul>
 
-			<a href="category/sport/" class="button alt">show all articles</a>
+			<a href="index.php?pg=event-calendar&lg=<?= $lg ?>" class="button alt">show all events</a>
 		</div>
 <!--		<div id="my_cyclewidget-2" class="widget_my_cyclewidget widget-content"> <h1>Videos</h1>-->
 <!--			<ul class="video wrapper">-->
@@ -211,7 +215,7 @@
 	</div>
 	<aside id="sidebar" class="grid_6">
 		<div class="sidebar-inner">
-			<div id="facebook-fan-box" class="widget widget_ffb"><h1></h1><iframe src="http://www.facebook.com/plugins/fan.php?id=240734989375&amp;width=218&amp;connections=9&amp;stream=false&amp;header=true&amp;locale=en_US" scrolling="no" frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:218px; height:336px"></iframe></div>
+<!--			<div id="facebook-fan-box" class="widget widget_ffb"><h1></h1><iframe src="http://www.facebook.com/plugins/fan.php?id=240734989375&amp;width=218&amp;connections=9&amp;stream=false&amp;header=true&amp;locale=en_US" scrolling="no" frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:218px; height:336px"></iframe></div>-->
 			<div id="my_bannerswidget-2" class="widget widget_my_bannerswidget"><h1>Advertisement</h1>
 				<ul class="banners-holder clearfix">
 					<li><a href="#" class="banner"><img src="http://livedemo00.template-help.com/wordpress_37712/wp-content/themes/theme1453/images/empty_ad.gif" alt=""></a></li>
