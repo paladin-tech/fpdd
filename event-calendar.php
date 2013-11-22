@@ -8,7 +8,6 @@ $rsEvent = $infosystem->Execute("SELECT `event_id`, `title_{$lg}` title, `date` 
 		<div id="content" class="grid_17 right suffix_1">
 			<div id="post-71" class="post-71 post type-post status-publish format-standard hentry category-overview tag-sit-amet post cat-24-id">
 				<article class="post-holder single-post">
-					<h2><?= $pageTitleEn ?></h2>
 					<?
 					if($loggedAsAdmin) {
 						?>
@@ -16,7 +15,7 @@ $rsEvent = $infosystem->Execute("SELECT `event_id`, `title_{$lg}` title, `date` 
 					<?
 					}
 					?>
-					<br><br><br><br>
+					<h2><?= $pageTitleEn ?></h2>
 					<ul class="post_list recent_posts">
 						<?
 						while(!$rsEvent->EOF) {
