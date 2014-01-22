@@ -17,7 +17,7 @@ if(isset($_GET['delete'])) {
 
 if(isset($_POST['submit'])) {
 
-	foreach($_POST as $key => $value) $$key = $value;
+	foreach($_POST as $key => $value) $$key = mysql_real_escape_string($value);
 
 	if($eventId == 0) {
 		$infosystem->Execute("INSERT INTO `fpdd_event` SET `title_en` = '{$txtEventNameEN}', `title_bg` = '{$txtEventNameBG}', `description_en` = '{$txtEventDescriptionEN}', `description_bg` = '{$txtEventDescriptionBG}', `date` = '{$txtEventDate}'");
